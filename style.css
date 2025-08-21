@@ -78,7 +78,15 @@ main p {
     background-color: #000;
 }
 
+.social-link.facebook {
+    background-color: #1877F2;
+}
+
 .social-link.phone {
+    background-color: #34C759;
+}
+
+.social-link.whatsapp {
     background-color: #25D366;
 }
 
@@ -104,6 +112,7 @@ main p {
 .address {
     background-color: #4285F4;
     color: #fff;
+    text-decoration: none;
     padding: 15px 20px;
     border-radius: 10px;
     display: flex;
@@ -111,12 +120,23 @@ main p {
     justify-content: center;
     font-size: 1.1em;
     margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 .address i {
     margin-left: 15px;
     font-size: 1.4em;
     color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.address:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.address:hover i {
+    transform: scale(1.1);
 }
 
 @keyframes float {
